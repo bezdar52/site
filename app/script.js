@@ -33,18 +33,58 @@ const result = 102 / (21 + +'31') - 23 ** 2
 console.log(result);
 
 // операторы сравнения 
-console.log(10 == 10); // true равно
-console.log(10 != 10); // false не равно
-console.log(10 > 3); // true больше
-console.log(10 < 3); // false меньше
-console.log(10 >= 10); // true больше или равно
-console.log(11 <= 10); // false меньше или равно
+// console.log(10 == 10); // true равно
+// console.log(10 != 10); // false не равно
+// console.log(10 > 3); // true больше
+// console.log(10 < 3); // false меньше
+// console.log(10 >= 10); // true больше или равно
+// console.log(11 <= 10); // false меньше или равно
 
-let year = 2022;
+let year = 2023;
 const non = false;
 
-if (year == 2023 || non == false) {
+// оперант && это и допустим есть два условия и они оба должны быть true
+// оперант || это или допустим есть два условия и одно из них должно быть true 
+
+if (year == 2023 && non == false) {
   console.log('Год 2023');
 } else {
   console.log('Год не 2023');
+}
+
+function cprint(text) {
+  console.log(text);
+}
+
+function input(text, number) {
+  return prompt(text, number);
+}
+
+// const userage = input("Укажите ваш возраст:", 18);
+
+// if (userage >= 18) {
+//   cprint("Вы проходите!");
+// } else {
+//   cprint("Вы не совершеннолетний!")
+// }
+
+// const aage = +prompt("Укажите ваш возраст:", 18);
+
+// switch (true) {
+//   case aage == 18:
+//     cprint("Вы совершеннолетний!");
+//     break;
+//   case aage == 25:
+//     cprint("Вы уже взрослый!");
+//     break;
+//   case aage > 25:
+//     cprint("Вы старик");
+//     break;
+//   default:
+//     cprint(`Ваш возраст: ${aage}` );
+// }
+
+
+for(let i = 0; i < 10; i++) {
+  alert(i);
 }
