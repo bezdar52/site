@@ -84,7 +84,19 @@ function input(text, number) {
 //     cprint(`Ваш возраст: ${aage}` );
 // }
 
+// function logMessage(message = 'тест', count = 1) {
+//   const messageformate = `${message}` 
 
-for(let i = 0; i < 10; i++) {
-  alert(i);
+//   for (let i = 0; i < count; i++) {
+//     console.log(messageformate);
+//   }
+// }
+
+// logMessage(undefined, 5);
+
+function getName(name) {
+  if(!name) return "Ошибка... Не указано имя"
+  return `О ты же тот самый как его там ${name}`
 }
+
+console.log(getName('Владимир'));
